@@ -1,0 +1,35 @@
+<ion-content>
+
+
+  <ion-item>
+    <ion-label position="floating" >Ingresa Numero 1</ion-label>
+    <ion-input type="number" [(ngModel)]="numero1" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" >Ingresa Numero 2</ion-label>
+    <ion-input type="number" [(ngModel)]="numero2" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" >Ingresa Numero 3</ion-label>
+    <ion-input type="number" [(ngModel)]="numero3" ></ion-input>
+  </ion-item>
+
+  <ion-button (click)="sumar()">
+    sumar
+  </ion-button>
+
+  <ion-button (click)="restar()">
+    restar
+  </ion-button>
+
+  <ion-button (click)="calcular()">
+    calcular
+  </ion-button>
+
+  <ion-item>
+    <ion-label>Respuesta es: <strong>{{respuesta}}</strong>  </ion-label>
+  </ion-item>
+  
+  </ion-content>
